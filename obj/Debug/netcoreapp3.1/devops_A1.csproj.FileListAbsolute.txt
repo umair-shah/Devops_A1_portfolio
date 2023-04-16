@@ -37,3 +37,4 @@ C:\Users\Asus\source\repos\devops_A1\obj\Debug\netcoreapp3.1\Razor\Pages\Educati
 C:\Users\Asus\source\repos\devops_A1\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Asus\source\repos\devops_A1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\Asus\source\repos\devops_A1\obj\Debug\netcoreapp3.1\Razor\Pages\Projects.cshtml.g.cs
+C:\Users\Asus\source\repos\devops_A1\obj\Debug\netcoreapp3.1\Razor\Pages\certification.cshtml.g.cs
