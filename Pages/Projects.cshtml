@@ -1,0 +1,62 @@
+﻿@page
+@model devops_A1.Pages.ProjectsModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <input type="text" id="filterText" placeholder="Filter by Technology">
+        <button id="filterButton">Filter</button>
+        <div id="projectList">
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>Technology Used: Java</p>
+            </div>
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>Technology Used: C#</p>
+            </div>
+            <div class="project">
+                <h2>Project 3</h2>
+                <p>Technology Used: Node.js</p>
+            </div>
+        </div>
+    </body>
+
+
+</html>
+@section Scripts
+    {
+    <script>
+
+        // Get references to the filter button and filter text box
+        const filterButton = document.getElementById("filterButton");
+        const filterText = document.getElementById("filterText");
+
+        // Add click event listener to the filter button
+        filterButton.addEventListener("click", function () {
+            // Get the value of the filter text box
+            const filterValue = filterText.value.toLowerCase();
+
+            // Get references to all the project elements
+            const projects = document.getElementsByClassName("project");
+
+            // Loop through all the projects and hide/show them based on the filter value
+            for (let i = 0; i < projects.length; i++) {
+                const project = projects[i];
+                const technology = project.getElementsByTagName("p")[0].innerText.toLowerCase();
+                if (technology.includes(filterValue)) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            }
+        });
+    </script>
+}

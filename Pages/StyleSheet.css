@@ -1,0 +1,88 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+/* Home Page Styles */
+#intro {
+    text-align: center;
+}
+
+/* Projects Page Styles */
+#filters {
+    margin-bottom: 1rem;
+}
+
+#filter-input {
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+#project-list {
+    margin-top: 1rem;
+}
+
+.project {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+    .project:hover {
+        background-color: #ddd;
+    }
+
+/* Education Page Styles */
+#courses {
+    margin-top: 1rem;
+}
+
+    #courses ul {
+        list-style: none;
+        margin-left: 1rem;
+    }
+
+    #courses li {
+        margin-bottom: 0.5rem;
+    }
